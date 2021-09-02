@@ -1,21 +1,12 @@
-#include <unistd.h> //import write...
-#include <stdio.h> //import printf....
+#include <unistd.h>
 
-int ft_putchar(int);
-/*void afficher (void) {
-    printf("Coucou\n");
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
 }
 
-void write (char C) {
-    
-}*/
-
-int main (void) {
-    ft_putchar(10);  
-    return(0);
+int	main(void)
+{
+	ft_putchar('A');
+	return (0);
 }
-
-int ft_putchar(int c) {
-	printf("%d", c);
-}
-
