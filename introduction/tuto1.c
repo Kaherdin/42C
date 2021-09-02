@@ -1,8 +1,11 @@
 #include <stdio.h>
+int b; //global variable
 
 int main () {
+    //Un int peut-être signed (par defaut). Signed = -128 a 127 | Unsigned = 0 a 255
     int i; //4 octets
     i = 3222;
+    long it; //8 octets
 
     char c; //1 octets
     c = 'k';
@@ -11,6 +14,15 @@ int main () {
     f = 12.37;
 
     double d; //8 octets
+
+    {
+        int offScope;
+    }
+
+    //offScope = 42 // Non accessible hors du scope {}
+    
+     
+
 
 
     printf("%lu\n", sizeof(c)); //show size
