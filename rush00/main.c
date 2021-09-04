@@ -1,14 +1,15 @@
 #include <stdio.h>
-
-/*int rush (int col, int row)
-{
-    int table[][row]
-}*/
+#include <unistd.h>
 
 int rush(int columns, int rows) {
-    for (int irow = 0; irow < rows; irow++)
+    int irow;
+    int icol;
+    irow = 0;
+    
+    while (irow < rows)
     {
-        for (int icol = 0; icol < columns; icol++)
+       icol = 0;
+        while (icol < columns)
         {
             if (irow == 0 || irow == rows - 1) {
                 if (icol == 0 || icol == (columns - 1) ) {
@@ -27,19 +28,21 @@ int rush(int columns, int rows) {
                 }
                
             }
+            icol++;
         
           
         }
         printf("\n");
+        irow++;
     }
 }
 
 int main()
 {
 
-    int const rows = 10;
-    int const columns = 4; 
-    rush(rows, columns);
+    int const rows = 5;
+    int const columns = 2; 
+    rush(columns, rows);
     
     
     //Arrays don't have to contain ints, just easiest to start with
