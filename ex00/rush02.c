@@ -10,12 +10,58 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	rush(int x, int y);
+char	ft_putchar(char c);
 
-int	main(void)
+void	ft_other_col(int ic, int col)
 {
-	int const	rows = 4;
-	int const	columns = 5;
+	if (ic == 0 || ic == col - 1)
+	{
+		ft_putchar('B');
+	}
+	else
+	{
+		ft_putchar(' ');
+	}
+}
 
-	rush(columns, rows);
+void	ft_columns(int ir, int rows, int ic, int col)
+{
+	if (ir == 0 || ir == rows - 1)
+	{
+		if ((ic == 0 || ic == col - 1) && ir == 0)
+		{
+			ft_putchar('A');
+		}
+		else if ((ic == col - 1 || ic == 0) && ir == rows - 1)
+		{
+			ft_putchar('C');
+		}
+		else
+		{
+			ft_putchar('B');
+		}
+	}
+	else
+	{
+		ft_other_col(ic, col);
+	}
+}
+
+void	rush(int x, int y)
+{
+	int	irow;
+	int	icol;
+
+	irow = 0;
+	while (irow < y)
+	{
+		icol = 0;
+		while (icol < x)
+		{
+			ft_columns(irow, y, icol, x);
+			icol++;
+		}
+		ft_putchar('\n');
+		irow++;
+	}
 }
