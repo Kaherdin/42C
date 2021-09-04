@@ -4,11 +4,8 @@
 {
     int table[][row]
 }*/
-int main()
-{
 
-    int const rows = 1;
-    int const columns = 5; 
+int rush(int columns, int rows) {
     for (int irow = 0; irow < rows; irow++)
     {
         for (int icol = 0; icol < columns; icol++)
@@ -24,7 +21,6 @@ int main()
             else {
                 if (icol == 0 || icol == columns - 1) {
                     printf("|");
-                    //printf("%i", icol);
                 }
                 else {
                     printf(" ");
@@ -36,6 +32,15 @@ int main()
         }
         printf("\n");
     }
+}
+
+int main()
+{
+
+    int const rows = 10;
+    int const columns = 4; 
+    rush(rows, columns);
+    
     
     //Arrays don't have to contain ints, just easiest to start with
     //All data does need to be same type, though
