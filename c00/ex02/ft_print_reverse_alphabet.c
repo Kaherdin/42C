@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/04 20:24:59 by aborst            #+#    #+#             */
+/*   Updated: 2021/09/04 20:39:58 by aborst           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_print_reverse_alphabet(void)
@@ -10,9 +22,4 @@ void	ft_print_reverse_alphabet(void)
 		write(1, &i, 1);
 		i--;
 	}
-}
-
-int	main(void)
-{
-	ft_print_reverse_alphabet();
 }

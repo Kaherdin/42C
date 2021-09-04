@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
+//https://stackoverflow.com/questions/3683602/single-quotes-vs-double-quotes-in-c-or-c#
+
+int	main(void)
 {
-    //strings are just character arrays
-    //the string ends with \0 (null character)
-    //not always the last possible index in the string.
-
-    char name[20];
-    scanf("%19s", name); 
-    //not passing a pointer with address-of-operator
-    //limiting to 19 characters
-
-    int letter = 0;
-    while (name[letter] != '\0')
-    {
-        printf("%c\n", name[letter]);
-        letter++;
-    }
+//strings are just character arrays
+//the string ends with \0 (null character)
+//not always the last possible index in the string.
+	char name[20];
+	scanf("%19s", name); 
+//not passing a pointer with address-of-operator
+//limiting to 19 characters
+	int letter = 0;
+	while (name[letter] != '\0')
+	{
+		printf("%c\n", name[letter]);
+		letter++;
+	}
     //ends on 6th character.
 
     //DON'T OVERWRITE THE NULL CHARACTER!!!
