@@ -10,12 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	rush(int columns, int rows);
+#include <unistd.h>
 
-int	main(void)
+void	ft_putchar(char c)
 {
-	int const	rows = 2;
-	int const	columns = 5;
-
-	rush(columns, rows);
+	write(1, &c, 1);
 }
