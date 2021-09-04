@@ -7,21 +7,32 @@
 int main()
 {
 
-    int const rows = 4;
-    int const columns = 5;
-    char studentGrades[rows][columns] = {
-                            {'o','-', '-', '-','o'},
-                            {'|', '-', '-', '-', '|'},
-                            {'|', '-', '-', '-', '|'},
-                            {'o', '-', '-', '-', 'o'},
-                            };  //atleast columns is required
-                                //in declaration
-
-    for (int i = 0; i < rows; i++)
+    int const rows = 1;
+    int const columns = 5; 
+    for (int irow = 0; irow < rows; irow++)
     {
-        for (int k = 0; k < columns; k++)
+        for (int icol = 0; icol < columns; icol++)
         {
-            printf("%c", studentGrades[i][k]);
+            if (irow == 0 || irow == rows - 1) {
+                if (icol == 0 || icol == (columns - 1) ) {
+                    printf("o");
+                }
+                else {
+                    printf("-");
+                }
+            }
+            else {
+                if (icol == 0 || icol == columns - 1) {
+                    printf("|");
+                    //printf("%i", icol);
+                }
+                else {
+                    printf(" ");
+                }
+               
+            }
+        
+          
         }
         printf("\n");
     }
