@@ -6,19 +6,23 @@
 /*   By: the TAP						            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/04 11:12:51 by TAP		       #+#    #+#             */
-/*   Updated: 2021/09/04 17:42:07 by tbrulhar         ###   ########.fr       */
+/*   Updated: 2021/09/04 18:32:04 by tbrulhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	ft_putchar(char c);
 
-void	ft_first_last_colum(int icol, int columns)
-{
-	if (icol == 0)
+void	ft_1_last_line(int irow, int rows, int icol, int col)
+{			
+	if (icol == 0 && irow == 0)
 	{
 		ft_putchar('A');
 	}
-	else if (icol == columns - 1)
+	else if (icol == col - 1 && irow == rows - 1)
+	{
+		ft_putchar('A');
+	}
+	else if ((icol == 0 && irow == rows - 1) || (icol == col - 1 && irow == 0))
 	{
 		ft_putchar('C');
 	}
@@ -32,7 +36,7 @@ void	ft_columns(int irow, int rows, int icol, int columns)
 {
 	if (irow == 0 || irow == rows - 1)
 	{
-		ft_first_last_colum(icol, columns);
+		ft_1_last_line (irow, rows, icol, columns);
 	}
 	else
 	{
