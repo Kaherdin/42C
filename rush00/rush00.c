@@ -38,18 +38,18 @@ void	ft_columns(int irow, int rows, int icol, int columns)
 	}
 }
 
-int	rush(int columns, int rows)
+void	rush(int x, int y)
 {
 	int	irow;
 	int	icol;
 
 	irow = 0;
-	while (irow < rows)
+	while (irow < y)
 	{
 		icol = 0;
-		while (icol < columns)
+		while (icol < x)
 		{
-			ft_columns(irow, rows, icol, columns);
+			ft_columns(irow, y, icol, x);
 			icol++;
 		}
 		ft_putchar('\n');

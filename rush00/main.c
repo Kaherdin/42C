@@ -14,9 +14,8 @@ int	rush(int columns, int rows);
 
 int	main(void)
 {
-	int const	rows = 20;
+	int const	rows = 2;
 	int const	columns = 5;
 
 	rush(columns, rows);
-	return (0);
 }
