@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	rush(int columns, int rows);
+int	rush(int x, int y);
 
 int	main(void)
 {
