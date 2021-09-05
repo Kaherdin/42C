@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/04 20:25:07 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/04 20:41:05 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/05 17:10:19 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 void	ft_is_negative(int n)
 {
-	char	pos;
+	char	coucou;
 	char	neg;
 
-	pos = 'P';
+	coucou = 'P';
 	neg = 'N';
 	if (n >= 0)
 	{
-		write(1, &pos, 1);
+		write(1, &coucou, 1);
+		write(1, &coucou, 1);
 	}
 	else
 	{
