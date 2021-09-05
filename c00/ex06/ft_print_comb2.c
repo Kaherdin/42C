@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/05 20:36:10 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/05 20:49:18 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/05 20:55:14 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,9 +67,9 @@ void	ft_print_comb2(void)
 		diz_a++;
 	}
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
 	ft_print_comb2();
 }
-*/
+ */
