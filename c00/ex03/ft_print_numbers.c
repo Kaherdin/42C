@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/04 20:25:03 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/04 20:25:04 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/05 17:31:36 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,4 @@ void	ft_print_numbers(void)
 		write(1, & i, 1);
 		i++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_numbers();
 }
