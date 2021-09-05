@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/04 20:25:11 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/04 20:42:42 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/05 12:10:02 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,4 @@ void	ft_print_comb(void)
 		}
 		centaine++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_comb();
 }
