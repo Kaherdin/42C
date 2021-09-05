@@ -5,13 +5,11 @@ int	main(void)
 	int		a;
 	int		b;
 	int		*ptr;
-	int		**ptr3;
 
+	b = 23;
 	ptr = &a;
 	printf("%p\n", ptr);
-	ptr = &b;
-	ptr3 = &ptr;
-	printf("%p\n", ptr);
-	printf("%p\n", ptr3);
+	printf("%p\n", &b);
+	printf("%p\n", ptr + 1);
 	return (0);
 }
