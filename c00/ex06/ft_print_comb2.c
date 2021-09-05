@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/05 20:36:10 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/05 20:37:56 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/05 20:49:18 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,27 @@ void	ft_putchar(char c)
 
 void	print_number(char diz_a, char uni_a, char diz_b, char uni_b)
 {
-	
+	while (uni_b <= '9')
+	{
+		if (!((diz_a == diz_b) && (uni_a == uni_b)))
+		{
+			ft_putchar(diz_a);
+			ft_putchar(uni_a);
+			ft_putchar(' ');
+			ft_putchar(diz_b);
+			ft_putchar(uni_b);
+			if (!(diz_b == '9'
+					&& uni_b == '9'
+					&& uni_a == '8'
+					&& diz_a == '9'
+				))
+			{
+				ft_putchar(',');
+				ft_putchar(' ');
+			}	
+		}				
+		uni_b++;
+	}			
 }
 
 void	ft_print_comb2(void)
@@ -39,27 +59,7 @@ void	ft_print_comb2(void)
 			while (diz_b <= '9')
 			{
 				uni_b = uni_a;
-				while (uni_b <= '9')
-				{
-					if (!((diz_a == diz_b) && (uni_a == uni_b)))
-					{
-						ft_putchar(diz_a);
-						ft_putchar(uni_a);
-						ft_putchar(' ');
-						ft_putchar(diz_b);
-						ft_putchar(uni_b);
-						if (!(diz_b == '9'
-								&& uni_b == '9'
-								&& uni_a == '8'
-								&& diz_a == '9'
-							))
-						{
-							ft_putchar(',');
-							ft_putchar(' ');
-						}						
-					}				
-					uni_b++;
-				}			
+				print_number(diz_a, uni_a, diz_b, uni_b);
 				diz_b++;
 			}
 			uni_a++;
@@ -67,8 +67,9 @@ void	ft_print_comb2(void)
 		diz_a++;
 	}
 }
-
+/*
 int	main(void)
 {
 	ft_print_comb2();
 }
+*/
