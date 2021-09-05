@@ -18,14 +18,26 @@ void	ft_print_comb2(void)
 	{
 		uni_a = '0';
 		while (uni_a <= '9')
-		{
-			ft_putchar(diz_a);
-			ft_putchar(uni_a);
-			ft_putchar('/,');
-			ft_putchar(' ');
+		{	
+			diz_b = '0';
+			while (diz_b <= '9')
+			{
+				uni_b = '0';
+				while (uni_b <= '9')
+				{
+					ft_putchar(diz_a);
+					ft_putchar(uni_a);
+					ft_putchar(' ');
+					ft_putchar(diz_b);
+					ft_putchar(uni_b);
+					ft_putchar(',');
+					ft_putchar(' ');
+					uni_b++;
+				}			
+				diz_b++;
+			}
 			uni_a++;
 		}
-		ft_putchar(' ');
 		diz_a++;
 	}
 }
