@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main () {
+int	main () {
     int a; 
     a = 12;
     printf("%d\n", a);

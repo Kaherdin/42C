@@ -2,6 +2,12 @@
     "files.associations": {
         "unistd.h": "c",
         "algorithm": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "bitset": "c",
+        "memory_resource": "c",
+        "iterator": "c",
+        "memory": "c",
+        "type_traits": "c",
+        "utility": "c"
     }
 }
