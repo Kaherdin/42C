@@ -6,11 +6,16 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 16:37:24 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/06 16:38:34 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/06 17:22:18 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
+
+void	ft_putchar(int n)
+{
+	write(1, &n, 1);
+}
 
 void	ft_putstr(char *str)
 {
@@ -19,12 +24,12 @@ void	ft_putstr(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		printf("%c", str[i]);
+		ft_putchar(str[i]);
 		i++;
 	}
 }
 
 /* int	main(void)
 {
-	ft_putstr("1111010101010");
+	ft_putstr("Hello Evaluator, I wish you success");
 } */
