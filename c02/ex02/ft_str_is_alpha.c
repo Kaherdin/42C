@@ -1,41 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/08 00:03:48 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/08 00:04:40 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+int	cond_check_alpha(char c)
 {
-	unsigned int	i;
+	if (((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')))
+		return (1);
+	else
+		return (0);
+}
+
+int	ft_str_is_alpha(char *str)
+{
+	int	i;
 
 	i = 0;
-	while (src[i] != '\0' && i < n)
+	while (str[i] != '\0')
 	{
-		dest[i] = src[i];
+		if (!cond_check_alpha(str[i]))
+			return (0);
 		++i;
 	}
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-	return (dest);
+	return (1);
 }
 /* 
 int	main(void)
-{
-	char	dest[] = "2";
-	char	*src = "abc";
-
-	ft_strncpy(dest, src, 3);
-	printf("%s\n", dest);
+{	
+	printf("%d\n", ft_str_is_alpha("asd"));
 	return (0);
-}  */
+}
+ */
