@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 16:38:15 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/06 17:22:57 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/07 16:57:33 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ void	ft_ft(int *nbr_point)
 
 /* int	main(void)
 {
-	int	number; 
+	int	number;
 
 	number = 20;
-	printf("%d\n", number);
+	printf("Old value : %d\n", number);
 	ft_ft(&number);
-	printf("%d\n", number);
+	printf("New value : %d\n", number);
 } */

@@ -40,7 +40,7 @@ int main()
 
     a = 200;
     printf("a   = %d\n", a);
-    printf("*b  = %d\n", *b);
+    printf("*b  = %d\n", *b);F
 
     *b = 300;
     printf("a   = %d\n", a);

@@ -1,48 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/06 16:41:40 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/07 16:58:23 by aborst           ###   ########.fr       */
+/*   Created: 2021/09/06 16:38:15 by aborst            #+#    #+#             */
+/*   Updated: 2021/09/07 16:56:22 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_ultimate_ft(int *********nbr)
+void	ft_ft(int *nbr_point)
 {
-	*********nbr = 42;
+	*nbr_point = 42;
 }
-/*
+
+//ALL EXAMPLE BELLOW SEEMS TO WORK
 int	main(void)
+{
+	int	*number;
+
+	number = 20;
+	printf("%d\n", number);
+	ft_ft(&number);
+	printf("%d\n", number);
+}
+/* int	main(void)
 {	
 	int	a;
-	int	*ptr1;
-	int	**ptr2;
-	int	***ptr3;
-	int	****ptr4;
-	int	*****ptr5;
-	int	******ptr6;
-	int	*******ptr7;
-	int	********ptr8;
-	int	*********ptr9;
-	
-	a = 100;
+	int	*number;
 
-	ptr1 = &a;
-	ptr2 = &ptr1;
-	ptr3 = &ptr2;
-	ptr4 = &ptr3;
-	ptr5 = &ptr4;
-	ptr6 = &ptr5;
-	ptr7 = &ptr6;
-	ptr8 = &ptr7;
-	ptr9 = &ptr8;
-	printf("Old value : %d\n", a);
-	ft_ultimate_ft(ptr9);
-	printf("New value : %d\n", a);
+	a = 100;
+	number = &a;
+	*number = 20;
+	printf("%d\n", *number);
+	ft_ft(number);
+	printf("%d\n", *number);
+} */
+
+/* int	main(void)
+{	
+	int	nbr;
+	int	*ptr;
+
+	nbr = 0;
+	ptr = &nbr;
+	printf("Old : %d\n", nbr);
+	ft_ft(ptr);
+	printf("New : %d\n", nbr);
 }
-*/
+ */

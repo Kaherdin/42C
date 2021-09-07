@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 16:37:24 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/06 21:18:26 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/07 17:02:00 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	ft_ultimate_div_mod(int *a, int *b)
 	printf("a = %d\n", a);
 	printf("b = %d\n", b);
 	ft_ultimate_div_mod(&a, &b);
-	printf("a = %d\n", a);
-	printf("b = %d\n", b);
-} */
+	printf("Division of a & b = %d\n", a);
+	printf("Modulo of a & b = %d\n", b);
+}
+ */
