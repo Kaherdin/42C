@@ -14,20 +14,20 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	//La taille des 2 strings est differentes, du coup, il y a une erreur
-	char dest[] = "Tu vas rater !";
-	char src[] = "Tu vas réussir !";
+	char dest[] = "aterassa";
+	char src[] = "reussir";
 
 	printf("String 1 = %s\n", dest);
 	printf("String 2 = %s\n", src);
 	ft_strcpy(dest, src);
-	//printf("String 1 is now = %s\n", &dest);
+	printf("String 1 is now = %s\n", &dest);
 	return (0);
-}
+} */
 
-/* int	main(void)
+int	main(void)
 {
 	char	*dest;
 	char	*src;
@@ -40,4 +40,3 @@ int	main(void)
 	printf("String 1 is now = %s\n", dest);
 	return (0);
 }
- */
