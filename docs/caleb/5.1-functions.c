@@ -61,7 +61,7 @@ int main()
     printf("%d ", power(2, 4)); //keep output on calling side
     printf("%d ", recursivePower(2, 4));
 
-    int val = 5; 
+    int *val = 5; //= int val = 5;
     changeVal(&val);
     printf("Val = %d\n", val);
 
