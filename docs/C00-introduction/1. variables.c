@@ -40,4 +40,5 @@ printf("%c\n", ptr); // a character
 printf("%s\n", ptr); // a string
 printf("%p\n", ptr); // a pointer
 printf("%n\n", ptr); // no output 
+//printf("%d\n", ft_str_is_numeric(" ")); //print return of function
 */
