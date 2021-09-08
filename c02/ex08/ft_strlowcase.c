@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/08 03:17:30 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/08 20:44:57 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,16 @@ char	*ft_strlowcase(char *str)
 
 /* int	main(void)
 {	
-	char	str1[] = "AuReLieN";
-	printf("Minuscle : %s\n", str1);
+	char	str1[] = "AbCdEfGhI"; //WORKINGå
+	//char	*str1 = "AbCdEfGhI"; //NOT WORKING
+
+	//char	str1; //NOT WORKING
+	//str1 = "AbCdEfGhI"; //NOT WORKING
+
+	//char	*str1; //NOT WORKINGˇ
+	//str1[] = "AbCdEfGhI"; //NOT WORKING
+	printf("Lowercase : %s\n", str1);
 	ft_strlowcase(str1);
-	printf("Majuscule : %s\n", str1); 
+	printf("Uppercase : %s\n", str1); 
 }
  */
