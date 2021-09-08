@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/08 01:49:53 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/08 02:06:48 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,25 +36,28 @@ int	ft_str_is_printable(char *str)
 	return (1);
 }
 
+/* 
 int	main(void)
 {	
 	char	ptr;
 	int		integer;
 
-	ptr = '\041'; //octal set
-	integer = 33; //decimal set
+	ptr = '\112'; //octal set
+	integer = 32; //decimal set
 	
-	printf("char Int : %d\n", ptr); // signed decimal int
-	printf("char Octal : %o\n", ptr); // unsigned octal int
-	printf("char Hexa : %x\n", ptr); // unsigned hexadecimal int
-	printf("char Character : %c\n", ptr); // a character
-
-
-	printf("int Int : %d\n", integer); // signed decimal int
-	printf("int Octal : %o\n", integer); // unsigned octal int
-	printf("int Hexa : %x\n", integer); // unsigned hexadecimal int
-	printf("int Character : %c\n", integer); // a character
-
-	/*  */printf("%d\n", ft_str_is_printable("ass \\3 sasas"));
+	 	
+	printf("char Int : %d\n", ptr); 
+	printf("char Octal : %o\n", ptr); 
+	printf("char Hexa : %x\n", ptr); 
+	printf("char Character : %c\n", ptr);
+	printf("int Int : %d\n", integer); 
+	printf("int Octal : %o\n", integer); 
+	printf("int Hexa : %x\n", integer); 
+	printf("int Character : %c\n", integer);
+	
+ 
+	//printf("%d\n", ft_str_is_printable("ass sasas ")); //ok
+	printf("%d\n", ft_str_is_printable("asa s s\01")); //ko
 	return (0);
 }
+*/
