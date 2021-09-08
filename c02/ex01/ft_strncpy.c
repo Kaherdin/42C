@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/08 00:03:48 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/08 20:51:24 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,16 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-/* 
-int	main(void)
-{
-	char	dest[] = "2";
-	char	*src = "abc";
 
+/* int	main(void)
+{
+	char	dest[] = "Source";
+	char	src[] = "Destination";
+
+	printf("src: %s old dest: %s\n", src, dest);
 	ft_strncpy(dest, src, 3);
-	printf("%s\n", dest);
+	printf("src: %s new dest: %s\n", src, dest);
 	return (0);
-}  */
+} 
+
+ */
