@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 00:57:13 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 19:40:06 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ char	ft_strncmp(char *s1, char *s2, unsigned int n)
 
 /* int	main(void)
 {
-	char	s1[] 	= "aaaaaaaaaaaa";
-	char	s2[] 	= "aaaabaaaaaaab";
+	char	s1[256] 	= "aaabaaaaaaaaab";
+	char	s2[256] 	= "aaaaaaaaaaaab";
 	printf("Result: %d\n", ft_strncmp(s1, s2, 5));
 	return (0);
 } 
