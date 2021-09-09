@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+void ft_div_mod(int a, int b, int *div, int *mod)
 {
 	*div = a / b;
 	*mod = a % b;
@@ -22,8 +22,8 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	int	b;
 	int	a;
-	int	*div;
-	int	*mod;
+	int	div;
+	int	mod;
 
 	a = 50;
 	b = 7;

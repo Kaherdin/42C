@@ -12,9 +12,9 @@
 
 //#include <stdio.h>
 
-void	ft_swap(int *a, int *b)
+void ft_swap(int *a, int *b)
 {
-	int	temp_a;
+	int temp_a;
 
 	temp_a = *a;
 	*a = *b;
@@ -23,8 +23,8 @@ void	ft_swap(int *a, int *b)
 
 /* int	main(void)
 {
-	int	*pb;
-	int	*pa;
+	int	pb;
+	int	pa;
 
 	pa = 13;
 	pb = 23;

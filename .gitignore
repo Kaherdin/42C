@@ -9,4 +9,4 @@ README.md
 .DS_Store
 *.out
 *.log
-.vscode/settings.json
+.vscode/*
