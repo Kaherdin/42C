@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_recursion.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 22:47:22 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 22:53:21 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 23:52:13 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,18 @@
 
 int	ft_iterative_factorial(int nb)
 {
-	int	i;
-
-	if (nb < 1)
+	if (nb == 0)
+	{
+		return (1);
+	}
+	else if (nb < 0)
 	{
 		return (0);
-	}		
-	i = nb;
-	while (i > 1)
-	{
-		nb = nb * (i - 1);
-		i--;
 	}
-	return (nb);
+	else
+	{
+		return (nb * ft_iterative_factorial(nb - 1));
+	}
 }
 
 /* int	main(void)
@@ -36,4 +35,5 @@ int	ft_iterative_factorial(int nb)
 
 	result = ft_iterative_factorial(5); // 5*4*3*2*1 = 120
 	printf("%d", result);
-} */
+}
+ */
