@@ -6,13 +6,13 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/08 00:44:35 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 19:02:51 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int cond_check_number(char c)
+int	cond_check_number(char c)
 {
 	if ((c >= '0' && c <= '9'))
 		return (1);
@@ -20,9 +20,9 @@ int cond_check_number(char c)
 		return (0);
 }
 
-int ft_str_is_numeric(char *str)
+int	ft_str_is_numeric(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')

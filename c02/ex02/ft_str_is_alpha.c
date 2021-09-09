@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/08 00:04:40 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 19:02:40 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,9 @@ int	ft_str_is_alpha(char *str)
 	}
 	return (1);
 }
-/* 
-int	main(void)
+
+/* int	main(void)
 {	
 	printf("%d\n", ft_str_is_alpha("asd"));
 	return (0);
-}
- */
+} */

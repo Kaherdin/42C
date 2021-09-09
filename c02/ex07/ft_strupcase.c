@@ -6,15 +6,15 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/08 03:12:42 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 19:03:48 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char *ft_strupcase(char *str)
+char	*ft_strupcase(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -27,8 +27,8 @@ char *ft_strupcase(char *str)
 	}
 	return (str);
 }
-
-/* int	main(void)
+/* 
+int	main(void)
 {	
 	char	str1[] = "AuReLieN";
 	printf("Minuscle : %s\n", str1);
