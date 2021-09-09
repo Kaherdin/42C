@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 16:37:24 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/07 17:27:13 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 18:30:30 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,9 @@ void	ft_putstr(char *str)
 /* int	main(void)
 {
 	char	*str;
+	char	str2[] = " for the swimming pool";
 
 	str = "Hello Evaluator, I wish you success";
 	ft_putstr(str);
-}
- */
+	ft_putstr(str2);
+} */

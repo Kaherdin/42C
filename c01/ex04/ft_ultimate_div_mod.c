@@ -6,15 +6,15 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 16:37:24 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/07 17:02:00 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 18:08:36 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void ft_ultimate_div_mod(int *a, int *b)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int temp;
+	int	temp;
 
 	temp = *a;
 	*a = *a / *b;
@@ -33,5 +33,4 @@ void ft_ultimate_div_mod(int *a, int *b)
 	ft_ultimate_div_mod(&a, &b);
 	printf("Division of a & b = %d\n", a);
 	printf("Modulo of a & b = %d\n", b);
-}
- */
+} */

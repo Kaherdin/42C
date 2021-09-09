@@ -6,15 +6,15 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 16:37:24 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/07 16:58:56 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 18:07:28 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include <stdio.h>
 
-void ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
-	int temp_a;
+	int	temp_a;
 
 	temp_a = *a;
 	*a = *b;

@@ -6,13 +6,13 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 16:37:24 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/07 17:01:05 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 18:34:17 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	*div = a / b;
 	*mod = a % b;
@@ -32,5 +32,4 @@ void ft_div_mod(int a, int b, int *div, int *mod)
 	ft_div_mod(a, b, &div, &mod);
 	printf("Division of a & b = %d\n", div);
 	printf("Modulo of a & b = %d\n", mod);
-}
-  */
+} */
