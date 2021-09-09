@@ -6,14 +6,14 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 21:38:00 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 22:18:48 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 22:23:29 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 
-void	ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
 	int	i;
 	int	len;
