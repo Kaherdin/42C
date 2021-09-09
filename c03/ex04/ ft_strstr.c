@@ -1,42 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*    ft_strstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 20:45:31 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 21:24:46 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;
-	int	i2;
+	int	j;
 
 	i = 0;
-	while (dest[i] != '\0')
+	while (str[i] != '\0')
 	{
+		j = 0;
+		while (to_find[j] == str[i + j])
+		{
+			if (to_find[j + 1] == '\0')
+			{
+				return (str + i);
+			}
+			j++;
+		}
 		i++;
-	}		
-	i2 = 0;
-	while (src[i2] != '\0')
-	{
-		dest[i + i2] = src[i2];
-		i2++;
 	}
-	dest[i + i2] = '\0';
-	return (dest);
+	return (0);
 }
 
 /* int	main(void)
 {
-	char src[10]	= "fghijklm";
-	char dest[10]	= "abcde";
-	printf("Str: %s", ft_strcat(dest, src));
+	char dest[256]	= "abcdef";
+	char src[256]	= "ab cdef";
+	//ft_strstr(dest, src);
+	printf("Str: %s", ft_strstr(dest, src));
+	//printf("str%d : %c, to_find%d: %c\n", i, str[i], j, to_find[j]);
 	return (0);
 }  */

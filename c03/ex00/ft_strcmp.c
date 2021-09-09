@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 19:23:53 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/09 21:26:56 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	ft_strcmp(char *s1, char *s2)
 {
 	char	s1[256] 	= "aaaaaaaaaaa";
 	char	s2[256] 	= "aaaaaaaaaaab";
+
 	printf("Result: %d\n", ft_strcmp(s1, s2));
 	return (0);
-}  */
- 
+} */
