@@ -26,16 +26,16 @@ char *ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-/* int	main(void)
+/* int main(void)
 {
-	char	dest; //A comparer aevec/sans l etoile
-	char	src; //Idem + veersion src[];
+	//char *dest; //A comparer aevec/sans l etoile
+	//char *src;	//Idem + veersion src[];
 
-	dest = "Tu vas rater";
-	src = "Tu vas réussir !";
+	char dest[] = "Tu vas rater";
+	char src[] = "Tu vas réussir !";
 	printf("String 1 = %s\n", dest);
 	printf("String 2 = %s\n", src);
-	ft_strcpy(&dest, &src);
+	ft_strcpy(dest, src);
 	printf("String 1 is now = %s\n", dest);
 	return (0);
 }
