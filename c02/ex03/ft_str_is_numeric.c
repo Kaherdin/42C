@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 
-int	cond_check_number(char c)
+int cond_check_number(char c)
 {
 	if ((c >= '0' && c <= '9'))
 		return (1);
@@ -20,9 +20,9 @@ int	cond_check_number(char c)
 		return (0);
 }
 
-int	ft_str_is_numeric(char *str)
+int ft_str_is_numeric(char *str)
 {
-	int	i;
+	int i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -30,7 +30,7 @@ int	ft_str_is_numeric(char *str)
 		if (!cond_check_number(str[i]))
 		{
 			return (0);
-		}			
+		}
 		++i;
 	}
 	return (1);
@@ -38,6 +38,7 @@ int	ft_str_is_numeric(char *str)
 
 /* int	main(void)
 {	
+	//A tester avec variables
 	printf("%d\n", ft_str_is_numeric("123213"));
 	return (0);
 }

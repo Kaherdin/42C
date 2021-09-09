@@ -12,12 +12,12 @@
 
 #include <stdio.h>
 
-char	*ft_strcpy(char *dest, char *src)
+char *ft_strcpy(char *dest, char *src)
 {
-	int	i;
+	int i;
 
 	i = 0;
-	while (src[i])
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
@@ -28,8 +28,8 @@ char	*ft_strcpy(char *dest, char *src)
 
 /* int	main(void)
 {
-	char	*dest;
-	char	*src;
+	char	dest; //A comparer aevec/sans l etoile
+	char	src; //Idem + veersion src[];
 
 	dest = "Tu vas rater";
 	src = "Tu vas réussir !";
