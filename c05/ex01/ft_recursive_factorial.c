@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 22:47:22 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 22:59:37 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/10 00:11:41 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,25 @@
 
 int	ft_recursive_factorial(int nb)
 {
-	int	i;
-
-	if (nb < 1)
+	if (nb == 0)
+	{
+		return (1);
+	}
+	else if (nb < 0)
 	{
 		return (0);
-	}		
-	i = nb;
-	while (i > 1)
-	{
-		nb = nb * (i - 1);
-		i--;
 	}
-	return (nb);
+	else
+	{
+		return (nb * ft_recursive_factorial(nb - 1));
+	}
 }
 
 /* int	main(void)
 {
 	int	result;
 
-	result = ft_iterative_factorial(5); // 5*4*3*2*1 = 120
+	result = ft_recursive_factorial(5); // 5*4*3*2*1 = 120
 	printf("%d", result);
-} */
+}
+ */
