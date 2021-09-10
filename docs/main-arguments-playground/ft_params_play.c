@@ -6,12 +6,13 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 00:49:26 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/10 01:15:04 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/10 02:32:43 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 void	ft_putchar(char c)
 {
@@ -37,17 +38,13 @@ int	multiply(int a, int b)
 
 //int	main(void)
 int	main(int argc, char **argv)
-{
-	int	i;
+{	
+	unsigned int	n;
+	unsigned int	n2;
 
-	i = 1;
-	printf("%s", argv[1]);
-	//printf("%d", multiply(argv[1], argv[2]));
-	while (i < argc)
-	{
-		//ft_putstr(argv[i]);
-		//ft_putchar('\n');
-		i++;
-	}
+	(void) argc;
+	n = atoi(argv[1]);
+	n2 = atoi(argv[2]);
+	printf("%d", multiply(n, n2));
 	return (0);
 }
