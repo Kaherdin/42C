@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 00:49:26 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/10 02:32:43 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/10 02:33:44 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ int	multiply(int a, int b)
 //int	main(void)
 int	main(int argc, char **argv)
 {	
-	unsigned int	n;
-	unsigned int	n2;
+	int	n;
+	int	n2;
 
 	(void) argc;
 	n = atoi(argv[1]);
