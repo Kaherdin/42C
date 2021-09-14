@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/14 16:13:21 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/14 17:10:44 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,23 @@
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
+	unsigned int	count;
 	unsigned int	i;
 
+	count = 0;
+	while (src[count])
+		++count;
 	i = 0;
-	while (src[i])
+	while (src[i] && i < (size - 1))
 	{
-		if (i < size - 1)
-			dest[i] = src[i];
-		i++;
+		dest[i] = src[i];
+		++i;
 	}
 	dest[i] = '\0';
-	return (i);
+	return (count);
 }
 
-int	main(void)
+/* int	main(void)
 {
  	//char	src1[256]	= "abcdefghi";
 	//char	dest1[50]   = "asdasd";
@@ -42,24 +45,25 @@ int	main(void)
 	//printf("Copy ft_strlcpy: %u", ft_strlcpy(dest1, src1, nb2));
 
 	char test[256] = "\0zxcvzxcvzxcvxzcvzxcv";
-	printf("%d-", ft_strlcpy(test, "asdf", 16));
-	printf("%s\n", test);
+	char test2[256] = "\0zxcvzxcvzxcvxzcvzxcv";
 	printf("%d-", ft_strlcpy(test, "uiop", 0));
+	printf("%s\n", test);
+ 	printf("%d-", ft_strlcpy(test, "asdf", 16));
 	printf("%s\n", test);
 	printf("%d-", ft_strlcpy(test, "qwerty", 4));
 	printf("%s\n", test);
-	printf("%d-", ft_strlcpy(test, "", 4));
+	printf("%d-", ft_strlcpy(test, "", 4)); 
 	printf("%s\n", test);
 
 	printf("----------- \n");
 
- 	printf("%d-", strlcpy(test, "asdf", 16));
-	printf("%s\n", test);
-	printf("%d-", strlcpy(test, "uiop", 0));
-	printf("%s\n", test);
-	printf("%d-", strlcpy(test, "qwerty", 4));
-	printf("%s\n", test);
-	printf("%d-", strlcpy(test, "", 4));
-	printf("%s\n", test);
+	printf("%d-", strlcpy(test2, "uiop", 0));
+	printf("%s\n", test2);
+ 	printf("%d-", strlcpy(test2, "asdf", 16));
+	printf("%s\n", test2);
+	printf("%d-", strlcpy(test2, "qwerty", 4));
+	printf("%s\n", test2);
+	printf("%d-", strlcpy(test2, "", 4));
+	printf("%s\n", test2); 
 	return (0);
-}
+} */
