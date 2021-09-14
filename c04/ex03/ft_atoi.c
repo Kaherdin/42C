@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 21:38:00 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 22:23:29 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/14 17:47:13 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,16 +40,13 @@ int	ft_atoi(char *str)
 		i--;
 	}
 	if (neg)
-	{
 		return (-nb);
-	}
 	else
-	{
 		return (nb);
-	}
 }
 
 /* int	main(void)
 {
-	ft_putnbr(-112);
-} */
+	ft_atoi(-112);
+}
+ */
