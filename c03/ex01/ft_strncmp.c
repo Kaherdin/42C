@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 19:40:06 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/14 00:58:20 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ char	ft_strncmp(char *s1, char *s2, unsigned int n)
 	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0' && i < n - 1)
 	{
 		i++;
-	}	
-	return (s1[i] - s2[i]);
+	}
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
 /* int	main(void)

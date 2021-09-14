@@ -6,14 +6,14 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 21:26:56 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/14 01:04:08 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <assert.h>
+#include <string.h>
 
-char	ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
 
@@ -22,14 +22,15 @@ char	ft_strcmp(char *s1, char *s2)
 	{
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
 /* int	main(void)
 {
-	char	s1[256] 	= "aaaaaaaaaaa";
-	char	s2[256] 	= "aaaaaaaaaaab";
+	char	s1[256] 	= "asdf";
+	char	s2[256] 	= "asdfg";
 
+	printf("original Result: %d\n", strcmp(s1, s2));
 	printf("Result: %d\n", ft_strcmp(s1, s2));
 	return (0);
 } */
