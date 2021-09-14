@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 00:49:26 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/10 00:54:44 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/14 19:13:46 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,4 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
+//gcc ft_print_params.c  && ./a.out test test2

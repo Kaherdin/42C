@@ -6,11 +6,12 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 03:18:56 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/14 03:21:52 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/14 19:18:31 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 
 void	ft_putchar(char c)
 {
@@ -19,8 +20,8 @@ void	ft_putchar(char c)
 
 void	ft_putstr(char *str)
 {
-    int i;
-        
+	int	i;
+
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -29,9 +30,9 @@ void	ft_putstr(char *str)
 	}
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-	int i;
+	int	i;
 
 	i = argc - 1;
 	while (i > 0)
