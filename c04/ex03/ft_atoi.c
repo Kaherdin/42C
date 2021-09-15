@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 21:38:00 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/14 17:47:13 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/15 23:12:40 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,37 +16,33 @@
 int	ft_atoi(char *str)
 {
 	int	i;
-	int	len;
-	int	nb;
-	int	mult;
-	int	neg;
+	int	negativ;
+	int	number;
 
 	i = 0;
-	len = 0;
-	nb = 0;
-	mult = 1;
-	neg = 0;
-	while (str[len] != '\0')
-		len++;
-	i = len - 1;
-	while (str[i] != '\0')
+	negativ = 0;
+	number = 0;
+	while ((str[i] == ' ') || (str[i] == '\t') || (str[i] == '\n')
+		|| (str[i] == '\v') || (str[i] == '\f') || (str[i] == '\r'))
+		i++;
+	if (str[i] == 45)
+		negativ = 1;
+	if ((str[i] == 45) || (str[i] == 43))
+		i++;
+	while (str[i] >= 48 && str[i] <= 57)
 	{
-		if (str[i] >= '0' && str[i] <= '9')
-			nb += (str[i] - 48) * mult;
-		if (str[i] == '-')
-			neg = 1;
-		mult *= 10;
-		len--;
-		i--;
+		number *= 10;
+		number += ((int)str[i] - 48);
+		i++;
 	}
-	if (neg)
-		return (-nb);
+	if (negativ == 1)
+		return (-number);
 	else
-		return (nb);
+		return (number);
 }
 
 /* int	main(void)
 {
-	ft_atoi(-112);
+	printf("%d", ft_atoi("1222"));
 }
  */
