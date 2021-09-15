@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/14 23:35:45 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/15 16:29:40 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ char	*ft_strcapitalize(char *str)
 
 /* int	main(void)
 {	
-	char	str1[255] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+	char	str1[255] = "salut, comment tu vas ? 
+	42mots quarante-deux; cinquante+et+un";
 	char	str2[255] = "-)-Rc=q/Q9x=h?l}&}+&Rx@#.#C^:[m$";
 
 	printf("Normal : %s\n", str1);
@@ -52,5 +53,5 @@ char	*ft_strcapitalize(char *str)
 	ft_strcapitalize(str2);
 	printf("Capitalize : %s\n", str2); 
 	//expected )-Rc=Q/Q9x=H?L}&}+&Rx@#.#C^:[M$
-} */
- 
+} 
+*/
