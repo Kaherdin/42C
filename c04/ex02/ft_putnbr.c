@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 21:38:00 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 22:14:18 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/15 22:29:51 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,23 +20,23 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
+	unsigned int	nbr;
+
 	if (nb < 0)
 	{
 		ft_putchar('-');
-		nb = -nb;
-	}
-	if (nb >= 10)
-	{
-		 ft_putnbr(nb / 10);
-		 ft_putnbr(nb % 10);
+		nbr = nb * -1;
 	}
 	else
-	{
-		ft_putchar(48 + nb);
-	}
+		nbr = nb;
+	if (nbr >= 10)
+		ft_putnbr(nbr / 10);
+	ft_putchar(nbr % 10 + 48);
 }
 
 /* int	main(void)
 {
-	ft_putnbr(-112);
+	ft_putnbr(-2147483648);
+	printf("\n");
+	ft_putnbr(-21);
 } */
