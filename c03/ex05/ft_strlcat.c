@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/15 21:42:15 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/15 21:45:38 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	size_t i;
-	size_t j;
+	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
 	j = 0;
