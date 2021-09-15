@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 22:47:22 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/14 18:52:02 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/16 01:39:31 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,11 @@ int	ft_is_prime(int nb)
 	return (0);
 }
 
-int	main(void)
+/* int	main(void)
 {
-	printf("%d", ft_is_prime(7));
-}
+	printf("%d\n", ft_is_prime(0)); //0
+	printf("%d\n", ft_is_prime(1)); //0
+	printf("%d\n", ft_is_prime(6)); //0
+	printf("%d\n", ft_is_prime(13)); //1
+	printf("%d", ft_is_prime(7)); //1
+} */
