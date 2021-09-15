@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 21:38:00 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/15 23:12:40 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/16 01:03:24 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ int	ft_atoi(char *str)
 {
 	int	i;
 	int	negativ;
-	int	number;
+	int	nb;
 
 	i = 0;
 	negativ = 0;
-	number = 0;
+	nb = 0;
 	while ((str[i] == ' ') || (str[i] == '\t') || (str[i] == '\n')
 		|| (str[i] == '\v') || (str[i] == '\f') || (str[i] == '\r'))
 		i++;
@@ -31,18 +31,18 @@ int	ft_atoi(char *str)
 		i++;
 	while (str[i] >= 48 && str[i] <= 57)
 	{
-		number *= 10;
-		number += ((int)str[i] - 48);
+		nb *= 10;
+		nb += ((int)str[i] - 48);
 		i++;
 	}
 	if (negativ == 1)
-		return (-number);
+		return (-nb);
 	else
-		return (number);
+		return (nb);
 }
 
 /* int	main(void)
 {
-	printf("%d", ft_atoi("1222"));
-}
- */
+	printf("%d,%d,%d\n", ft_atoi("15"), ft_atoi("0"), ft_atoi("-25"));
+	printf("%d,%d", ft_atoi("2147483647"), ft_atoi("-2147483648"));
+} */
