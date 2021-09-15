@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/15 21:45:38 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/15 21:47:32 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	return (i);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	test[256] = "\0zxcvzxcvzxcvxzcvzxcv";
 	char	test2[256] = "\0zxcvzxcvzxcvxzcvzxcv";
@@ -65,4 +65,4 @@ int	main(void)
 	printf("%s\n", test2);
 	printf("%ld-", strlcat(test2, "asdf", (size_t)0));
 	printf("%s\n", test2); 
-} 
+}  */
