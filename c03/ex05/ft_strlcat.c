@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/15 21:35:08 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/15 21:42:15 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,43 +15,32 @@
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	unsigned int	j;
-	unsigned int	k;
-	unsigned int	i;
+	size_t i;
+	size_t j;
 
 	i = 0;
+	j = 0;
 	while (dest[i])
 		i++;
-	j = 0;
-	while (src[j] && j < size)
+	if (size < i)
 	{
-		dest[i + j] = src[j];
-		j++;
+		while (src[j])
+			j++;
+		return (size + j);
 	}
-	dest[i + j] = '\0';
-	k = 0;
-	while (src[k])
-		k++;
-	return (k + size);
+	while (size > 0 && i < size - 1 && src[j])
+		dest[i++] = src[j++];
+	dest[i] = '\0';
+	while (src[j++])
+		i++;
+	return (i);
 }
 
 int	main(void)
 {
 	char	test[256] = "\0zxcvzxcvzxcvxzcvzxcv";
+	char	test2[256] = "\0zxcvzxcvzxcvxzcvzxcv";
 	
-
-	printf("%ld-", strlcat(test, "asdf", 16));
-	printf("%s\n", test);
-	printf("%ld-", strlcat(test, "asdf", 6));
-	printf("%s\n", test);
-	printf("%ld-", strlcat(test, "asdf", 4));
-	printf("%s\n", test);
-	printf("%ld-", strlcat(test, "", 16));
-	printf("%s\n", test);
-	printf("%ld-", strlcat(test, "asdf", 0));
-	printf("%s\n", test); 
-
-	printf("--------------\n");
 
 	printf("%d-", ft_strlcat(test, "asdf", 16));
 	printf("%s\n", test);
@@ -63,4 +52,17 @@ int	main(void)
 	printf("%s\n", test);
 	printf("%d-", ft_strlcat(test, "asdf", 0));
 	printf("%s\n", test);
+
+	printf("--------------\n");
+
+	printf("%ld-", strlcat(test2, "asdf", (size_t)16));
+	printf("%s\n", test2);
+	printf("%ld-", strlcat(test2, "asdf", (size_t)6));
+	printf("%s\n", test2);
+	printf("%ld-", strlcat(test2, "asdf", (size_t)4));
+	printf("%s\n", test2);
+	printf("%ld-", strlcat(test2, "", (size_t)16));
+	printf("%s\n", test2);
+	printf("%ld-", strlcat(test2, "asdf", (size_t)0));
+	printf("%s\n", test2); 
 } 
