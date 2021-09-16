@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 21:38:00 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/16 02:15:27 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/16 02:25:24 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,9 @@ int	ft_atoi(char *str)
 		return (nb);
 }
 
-int	main(void)
+/* int	main(void)
 {
-/*  	printf("%d,%d,%d\n", ft_atoi("15"), ft_atoi("0"), ft_atoi("---25"));
-	printf("%d,%d", ft_atoi("2147483647"), ft_atoi("-2147483648"));  */
-
+	printf("%d,%d,%d\n", ft_atoi("15"), ft_atoi("0"), ft_atoi("---25"));
+	printf("%d,%d", ft_atoi("2147483647"), ft_atoi("-2147483648"));  
 	printf("%d\n", ft_atoi("   ----+--+1234ab567"));
-}
+} */
