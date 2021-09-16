@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 22:47:22 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/14 18:26:03 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/16 22:16:53 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 
 int	ft_fibonacci(int index)
 {
-	if (index < 1)
+	if (index < 0)
+		return (-1);
+	else if (index < 1)
 		return (0);
 	else if (index <= 1)
 		return (index);
@@ -26,7 +28,8 @@ int	ft_fibonacci(int index)
 /* int	main(void)
 {
 	//https://fr.wikipedia.org/wiki/Suite_de_Fibonacci
-	printf("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",
+	printf("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",
+	ft_fibonacci(-1477), //-1
 	ft_fibonacci(0), //0
 	ft_fibonacci(1), //1
 	ft_fibonacci(2), //1
