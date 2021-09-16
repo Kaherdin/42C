@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/06 16:37:24 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/13 13:31:33 by aborst           ###   ########.fr       */
+/*   Created: 2021/09/16 16:21:05 by aborst            #+#    #+#             */
+/*   Updated: 2021/09/16 17:17:46 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_sort_int_tab(int *tab, int size)
 {
-	int	temp;
 	int	i;
 	int	j;
+	int	tmp;
 
 	i = 0;
 	while (i < size - 1)
@@ -26,27 +26,40 @@ void	ft_sort_int_tab(int *tab, int size)
 		{
 			if (tab[i] > tab[j])
 			{
-				temp = tab[i];
+				tmp = tab[i];
 				tab[i] = tab[j];
-				tab[j] = temp;
+				tab[j] = tmp;
 			}
 			j++;
 		}
 		i++;
-	}
+	}	
 }
 
 /* int	main(void)
 {
-	int	tab[9] = {30,5,2,3,4,8,16,20,24};
-	for(int i = 0; i < 9; i++)
+	int	tab[] = {123, 2, 30, 23, 100, 42, 2000000, -1, 2333, 5, 12, 1, 212, 9389, 14};
+	int i = 0;
+	int j = 0;
+
+	//*size_t size = sizeof(tab)/sizeof(tab[0]);
+	int size = sizeof(tab)/sizeof(tab[0]);	
+	printf("size 2%d\n", size);
+	
+
+	
+	printf("before : "); 
+	while (i < size)
 	{
 		printf("%d ", tab[i]); 
+		i++;
 	}
-	printf("\n");
-	ft_sort_int_tab(tab, 9);
-	for(int i = 0; i < 9; i++)
+	ft_sort_int_tab(tab, size);
+	
+	printf("\nafter : "); 
+	while (j < size)
 	{
-		printf("%d ", tab[i]); 
+		printf("%d ", tab[j]); 
+		j++;
 	}
-}  */
+} */
