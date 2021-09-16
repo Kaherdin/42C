@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 22:47:22 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/16 01:39:26 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/16 18:19:34 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	ft_sqrt(int nb)
 
 	racine = 1;
 	multi = 0;
+	if (nb == 1)
+		return (nb);
 	while (racine <= nb / 2)
 	{
 		multi = racine * racine;
@@ -27,14 +29,30 @@ int	ft_sqrt(int nb)
 		{
 			return (racine);
 		}
-		racine = racine + 1;
+		racine++;
 	}
 	return (0);
 }
 
 /* int	main(void)
 {
-	printf("%d\n", ft_sqrt(65)); //0
-	printf("%d\n", ft_sqrt(64)); //8
-	printf("%d\n", ft_sqrt(144)); //12
+	int res, exp;
+
+	res = ft_sqrt(1), exp = 1;
+	printf("root 1 (%d vs %d) -> %d\n", res, exp, res == exp);
+ 	res = ft_sqrt(4), exp = 2;
+	printf("root 4 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(0), exp = 0;
+	printf("root 0 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(3), exp = 0;
+	printf("root 3 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(7), exp = 0;
+	printf("root 7 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(16), exp = 4;
+	printf("root 16 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(-5), exp = 0;
+	printf("root -5 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(144), exp = 12;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp); 
+
 } */
