@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 22:47:22 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/17 01:15:55 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/17 01:18:37 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	ft_sqrt(int nb)
 	}
 }
 
- int	main(void)
+/*  int	main(void)
 {
 
 	printf("sqrt of %d is %d\n", 49, ft_sqrt(49));
@@ -97,4 +97,4 @@ int	ft_sqrt(int nb)
 	printf("sqrt of %d is %d\n", 2130351245, ft_sqrt(2130351245));
 	printf("sqrt of %d is %d\n", 1813567396, ft_sqrt(1813567396)); 
 	printf("sqrt of %d is %d\n", 959162111, ft_sqrt(959162111)); 
-}  
+}   */
