@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 22:47:22 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/16 17:31:19 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/16 18:02:47 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,4 @@ int	ft_recursive_factorial(int nb)
 	printf("13! (%d vs %d) -> %d\n", result, expected, result == expected);
 	result = ft_recursive_factorial(-2), expected = 0;
 	printf("-2! (%d vs %d) -> %d\n", result, expected, result == expected);
-	result = ft_recursive_factorial(1000), expected = 0;
-	printf("1000! (%d vs %d) -> %d\n", result, expected, result == expected);
 } */
