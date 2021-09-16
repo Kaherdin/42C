@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 19:33:51 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/14 19:45:09 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/16 01:43:26 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ int	*ft_range(int min, int max)
 
 /* int	main(void)
 {
-	int* res;
-	int i;
+	int	*res;
+	int	i;
 	res = ft_range(5, 10);
 	for (i = 0; i < 5; i++)
 		printf("%d,", res[i]);
