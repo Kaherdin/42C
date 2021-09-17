@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 01:27:56 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/17 02:23:51 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/17 02:30:28 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void	ft_union(char *s1, char *s2)
 	}
 }
 
-int main(void)
+int	main(void)
 {
-    ft_union("rien", "cette phrase ne cache rien");
-} 
+	ft_union("rien", "cette phrase ne cache rien");
+}
