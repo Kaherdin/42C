@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 22:47:22 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/17 01:18:37 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/18 23:27:18 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,8 @@ int	ft_sqrt(int nb)
 	}
 }
 
-/*  int	main(void)
+/* int	main(void)
 {
-
 	printf("sqrt of %d is %d\n", 49, ft_sqrt(49));
 	int	res, exp;
 
@@ -79,22 +78,32 @@ int	ft_sqrt(int nb)
 	printf("root -5 (%d vs %d) -> %d\n", res, exp, res == exp);
 	res = ft_sqrt(144), exp = 12;
 	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
-
-	printf("sqrt of %d is %d\n", -125, ft_sqrt(-125));
-	printf("sqrt of %d is %d\n", 0, ft_sqrt(0));
-	printf("sqrt of %d is %d\n", 1, ft_sqrt(1));
-	printf("sqrt of %d is %d\n", 2, ft_sqrt(2));
-	printf("sqrt of %d is %d\n", 1640045925, ft_sqrt(1640045925));
-	printf("sqrt of %d is %d\n", 2147395600, ft_sqrt(2147395600));
-	printf("sqrt of %d is %d\n", 2147483646, ft_sqrt(2147483646));
-	printf("sqrt of %d is %d\n", 917362944, ft_sqrt(917362944));
-	printf("sqrt of %d is %d\n", 1926881480, ft_sqrt(1926881480));
-	printf("sqrt of %d is %d\n", 464919844, ft_sqrt(464919844));
-	printf("sqrt of %d is %d\n", 274208610, ft_sqrt(274208610));
-	printf("sqrt of %d is %d\n", 115820644, ft_sqrt(115820644));
-	printf("sqrt of %d is %d\n", 641135909, ft_sqrt(641135909));
-	printf("sqrt of %d is %d\n", 359595369, ft_sqrt(359595369));
-	printf("sqrt of %d is %d\n", 2130351245, ft_sqrt(2130351245));
-	printf("sqrt of %d is %d\n", 1813567396, ft_sqrt(1813567396)); 
-	printf("sqrt of %d is %d\n", 959162111, ft_sqrt(959162111)); 
+	res = ft_sqrt(-125), exp = 0;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(1640045925), exp = 0;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(2147395600), exp = 46340;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(2147483646), exp = 0;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(917362944), exp = 30288;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(1926881480), exp = 0;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(464919844), exp = 21562;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(274208610), exp = 0;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(115820644), exp = 10762;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(641135909), exp = 0;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(359595369), exp = 18963;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(2130351245), exp = 0;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(1813567396), exp = 42586;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
+	res = ft_sqrt(959162111), exp = 0;
+	printf("root 144 (%d vs %d) -> %d\n", res, exp, res == exp);
 }   */
