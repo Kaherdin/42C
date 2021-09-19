@@ -7,6 +7,22 @@ int	ft_whitespace(char c)
 		return (0);
 }
 
+int	ft_is_uppercase(char c)
+{
+	if(c >= 'A' && c = 'Z')
+		return (1);
+	else
+		return (0);
+}
+
+int	ft_is_lowercase(char c)
+{
+	if(c >= 'a' && c = 'z')
+		return (1);
+	else
+		return (0);
+}
+
 bool	ft_is_number(char c)
 {
 	return (c >= '0' && c <= '9');
