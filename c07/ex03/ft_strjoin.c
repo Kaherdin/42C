@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 19:17:20 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/20 23:07:45 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/20 23:15:08 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,8 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	return (str);
 }
 
-int	main(int argc, char **argv)
+/* int	main(int argc, char **argv)
 {
+	(void) argc;
 	printf("%s\n", ft_strjoin(3, argv, " | "));
-}
+} */
