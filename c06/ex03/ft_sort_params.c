@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 03:18:56 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/20 16:10:44 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/20 16:15:18 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,44 +51,27 @@ void	ft_strswap(char **a, char **b)
 	*b = c;
 }
 
-/* int	main(int argc, char **argv)
-{
-	int	i;
-
-	i = argc - 1;
-	while (i > 0)
-	{
-		ft_putstr(argv[i]);
-		ft_putchar('\n');
-		i--;
-	}
-	return (0);
-} */
-
 int	main(int argc, char **argv)
 {
-	int		find;
+	int		checkpos;
 	int		i;
 
-	find = 1;
-	while (find)
+	checkpos = 1;
+	while (checkpos)
 	{
-		find = 0;
-		i = 0;
-		while (++i < argc - 1)
+		checkpos = 0;
+		i = 1;
+		while (i < argc - 1)
 		{
 			if (ft_strcmp(argv[i], argv[i + 1]) > 0)
-			{
-				ft_strswap(&argv[i], &argv[i + 1]);
-				find = 1;
-			}
+				ft_strswap(&argv[i], &argv[i + 1]), checkpos = 1;
+			i++;
 		}
 	}
 	i = 1;
 	while (i < argc)
 	{
-		ft_putstr(argv[i]);
-		ft_putchar('\n');
+		ft_putstr(argv[i]), ft_putchar('\n');
 		i++;
 	}	
 	return (0);
