@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_whitespace(char c)
+#include <stdio.h>
+
+int	ft_is_whitespace(char c)
 {
 	if (c == ' ' || c == '\n' || c == '\v' || c == '\t'
 		|| c == '\f' || c == '\r')
@@ -50,15 +52,17 @@ int	ft_atoi(const char *str)
 
 	minus = 1;
 	while (ft_is_whitespace(*str) == 1)
+	{
 		str++;
-	if (*str == '-' || *str == '+')
+	}		
+	while (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
 			minus *= -1;
 		str++;
 	}
 	result = 0;
-	while (ft_is_number(*str))
+	while (ft_is_number(*str) == 1)
 	{
 		result *= 10;
 		result += *str - '0';
@@ -66,3 +70,10 @@ int	ft_atoi(const char *str)
 	}
 	return (result * minus);
 }
+
+/* int	main(void)
+{
+  	printf("%d,%d,%d\n", ft_atoi("15"), ft_atoi("0"), ft_atoi("---25"));
+	printf("%d,%d\n", ft_atoi("2147483647"), ft_atoi("-2147483648")); 
+	printf("%d\n", ft_atoi("   ----+--+1234ab567"));
+} */
