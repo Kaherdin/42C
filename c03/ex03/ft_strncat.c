@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:55:36 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/09 21:02:39 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/20 22:37:56 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,20 @@
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	unsigned int	i;
-	unsigned int	i2;
+	unsigned int	j;
 
 	i = 0;
 	while (dest[i] != '\0')
 	{
 		i++;
 	}		
-	i2 = 0;
-	while (src[i2] != '\0' && i2 < nb)
+	j = 0;
+	while (src[j] != '\0' && j < nb)
 	{
-		dest[i + i2] = src[i2];
-		i2++;
+		dest[i + j] = src[j];
+		j++;
 	}
-	dest[i + i2] = '\0';
+	dest[i + j] = '\0';
 	return (dest);
 }
 
@@ -39,5 +39,4 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	char src[256]	= "fghijklm";
 	printf("Str: %s", ft_strncat(dest, src, 2));
 	return (0);
-} 
- */
+}  */
