@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 00:49:26 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/10 00:50:21 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/20 18:58:37 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ void	ft_putstr(char *str)
 
 int	main(int argc, char **argv)
 {
-	(void)argc;
-	ft_putstr(argv[0]);
+	if (argc > 0)
+		ft_putstr(argv[0]);
 	ft_putchar('\n');
 	return (0);
 }

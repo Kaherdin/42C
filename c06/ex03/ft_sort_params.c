@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 03:18:56 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/20 16:15:18 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/20 18:52:30 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,20 +53,15 @@ void	ft_strswap(char **a, char **b)
 
 int	main(int argc, char **argv)
 {
-	int		checkpos;
 	int		i;
 
-	checkpos = 1;
-	while (checkpos)
+	i = 1;
+	while (i < argc - 1)
 	{
-		checkpos = 0;
-		i = 1;
-		while (i < argc - 1)
-		{
-			if (ft_strcmp(argv[i], argv[i + 1]) > 0)
-				ft_strswap(&argv[i], &argv[i + 1]), checkpos = 1;
+		if (ft_strcmp(argv[i], argv[i + 1]) > 0)
+			ft_strswap(&argv[i], &argv[i + 1]), i = 1;
+		else
 			i++;
-		}
 	}
 	i = 1;
 	while (i < argc)
