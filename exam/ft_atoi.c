@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/20 11:48:47 by aborst            #+#    #+#             */
+/*   Updated: 2021/09/20 11:48:47 by aborst           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 int	ft_whitespace(char c)
 {
-	if(c = ' ' || c = '\n' || c = '\v' || c = '\t' || c = '\f' || c = '\r' || )
+	if (c == ' ' || c == '\n' || c == '\v' || c == '\t'
+		|| c == '\f' || c == '\r')
 		return (1);
 	else
 		return (0);
@@ -9,7 +21,7 @@ int	ft_whitespace(char c)
 
 int	ft_is_uppercase(char c)
 {
-	if(c >= 'A' && c = 'Z')
+	if (c >= 'A' && c <= 'Z')
 		return (1);
 	else
 		return (0);
@@ -17,18 +29,21 @@ int	ft_is_uppercase(char c)
 
 int	ft_is_lowercase(char c)
 {
-	if(c >= 'a' && c = 'z')
+	if (c >= 'a' && c <= 'z')
 		return (1);
 	else
 		return (0);
 }
 
-bool	ft_is_number(char c)
+int	ft_is_number(char c)
 {
-	return (c >= '0' && c <= '9');
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	result;
 	int	minus;

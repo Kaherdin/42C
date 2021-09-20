@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 02:40:39 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/17 02:56:18 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/19 03:23:56 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,5 @@ void	ft_first_word(char *str)
 //int	main(int argc, char **argv)
 int	main(void)
 {
-	ft_first_word("tesst asdsadas");
+	ft_first_word("		tesst asdsadas");
 }
