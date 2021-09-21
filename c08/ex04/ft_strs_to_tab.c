@@ -6,40 +6,40 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/11 18:01:29 by ecaceres          #+#    #+#             */
-/*   Updated: 2021/09/21 21:02:07 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/21 21:28:06 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdio.h>
-
 #include "ft_stock_str.h"
 
-int					ft_str_length(char *str)
+int	ft_strlen(char *str)
 {
-	int	index;
+	int	len;
 
-	index = 0;
-	while (str[index])
-		index++;
-	return (index);
+	len = 0;
+	while (str[len])
+		len++;
+	return (len);
 }
 
-char				*ft_strdup(char *src)
+char	*ft_strdup(char *src)
 {
-	int		index;
-	char	*dest;
+	int		i;
+	int		len;
+	char	*str;
 
-	index = 0;
-	if ((dest = (char *)malloc(ft_str_length(src) * sizeof(char) + 1)) == NULL)
-		return (0);
-	while (src[index])
+	len = ft_strlen(src);
+	str = malloc(sizeof(*str) * (len + 1));
+	i = 0;
+	while (i < len)
 	{
-		dest[index] = src[index];
-		index++;
+		str[i] = src[i];
+		i++;
 	}
-	dest[index] = '\0';
-	return (dest);
+	str[i] = '\0';
+	return (str);
 }
 
 struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
@@ -49,12 +49,14 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	struct s_stock_str	*created;
 
 	ac = ac + 0;
-	if (!(array = malloc((ac + 1) * sizeof(struct s_stock_str))))
+	array = malloc((ac + 1) * sizeof(struct s_stock_str));
+	if (!(array))
 		return (NULL);
 	index = 0;
 	while (index < ac)
 	{
-		if (!(created = (t_stock_str *)malloc(sizeof(struct s_stock_str))))
+		created = (t_stock_str *)malloc(sizeof(struct s_stock_str));
+		if (!(created))
 			return (NULL);
 		array[index] = *created;
 		array[index].size = ft_str_length(av[index]);
@@ -66,7 +68,7 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	return (array);
 }
 
-int					main(void)
+/* int	main(void)
 {
 	int					index;
 	int					ac;
@@ -94,4 +96,4 @@ int					main(void)
 		printf("\t|     size : %d\n", structs[index].size);
 		index++;
 	}
-}
+} */
