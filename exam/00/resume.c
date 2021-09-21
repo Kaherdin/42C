@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 01:48:05 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/21 03:05:35 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/21 21:19:51 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,21 +41,67 @@ void	ft_putstr_array(char str[])
 	}
 }
 
-void	ft_putnbr(int nb)
+int	ft_is_whitespace(char c)
 {
-	unsigned int nbr;
+	if (c == ' ' || c == '\n' || c == '\v' || c == '\t'
+		|| c == '\f' || c == '\r')
+		return (1);
+	else
+		return (0);
+}
 
-	if (nb < 0)
+int	ft_is_uppercase(char c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
+}
+
+int	ft_is_lowercase(char c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
+}
+
+int	ft_is_number(char c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
+}
+
+void	ft_putnbr(int nbr)
+{
+	char c;
+
+	if (nbr >= 10)
 	{
-		ft_putchar('-');
-		nbr = nb * -1;
+		ft_putnbr(nbr / 10);
+		ft_putnbr(nbr % 10);
 	}
 	else
-		nbr = nb;
+	{
+		c = nbr + '0';
+		write(1, &c, 1);
+	}
+}
 
-	if (nbr > 10)
-		ft_putnbr(nbr / 10);
-	ft_putchar(nbr % 10 + 48);
+int		ft_is_prime(int nbr)
+{
+	int i;
+
+	i = 2;
+	while (i < nbr)
+	{
+		if (nbr % i == 0)
+			return (0);
+		i++;
+	}
+	return (1);
 }
 
 int	ft_strlen(char str[])

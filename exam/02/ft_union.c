@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 01:27:56 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/21 05:06:50 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/21 21:43:53 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,9 @@ void	ft_union(char *s1, char *s2)
 int	main(void)
 {
 	ft_union("zpadinton", "paqefwtdjetyiytjneytjoeyjnejeyj");
+	ft_putchar('\n');
+	ft_union("ddf6vewg64f", "gtwthgdwthdwfteewhrtag6h4ffdhsd");
+	ft_putchar('\n');
+	ft_union("rien", "cette phrase ne cache rien");
 	ft_putchar('\n');
 }

@@ -9,7 +9,10 @@
     "memory": "c",
     "type_traits": "c",
     "utility": "c",
-    "string.h": "c"
+    "string.h": "c",
+    "sstream": "c",
+    "__tuple": "c",
+    "array": "c"
   },
   "C_Cpp_Runner.warnings": [
     "-Wall",

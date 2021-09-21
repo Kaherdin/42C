@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 02:26:13 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/21 14:59:26 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/21 21:33:48 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_putchar(char c);
 void	ft_putstr(char *str);
 int		ft_strlen(char *str);
 void	ft_swap(int *a, int *b);
-int		ft_strcmp(char *s1, char s2);
+int		ft_strcmp(char *s1, char *s2);
 
 #endif
