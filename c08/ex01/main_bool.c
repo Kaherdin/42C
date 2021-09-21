@@ -6,11 +6,13 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/21 15:17:47 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/21 15:27:21 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/21 17:37:35 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_boolean.h"
+#include <unistd.h>
+
 
 void	ft_putstr(char *str)
 {
