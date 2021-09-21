@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 19:33:51 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/21 03:55:30 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/21 14:58:14 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	*ft_strdup(char *src)
 	return (str);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	*str;
 	char	*res;
@@ -94,4 +94,4 @@ int	main(void)
 	str = ft_strdup("rK6Hdb5hvWdNpIcaDc5tbB");
 	printf("%s\n", str);
 	free(str);
-}
+} */
