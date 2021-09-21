@@ -1,33 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_boolean.h                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/21 18:52:08 by aborst            #+#    #+#             */
+/*   Updated: 2021/09/21 18:52:18 by aborst           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FT_BOOLEAN_H
+
 # define FT_BOOLEAN_H
+# include <unistd.h>
 
-void	ft_putstr(char *str);
+# define SUCCESS 0
 
-# ifndef TRUE
-#  define TRUE 1
-# endif
-# ifndef FALSE
-#  define FALSE 0
-# endif
+# define FALSE	0
+# define TRUE	1
 
-typedef unsigned char	t_bool;
+# define EVEN_MSG "j'ai un nombre pair d'arguments.\n"
+# define ODD_MSG "j'ai un nombre impair d'arguments.\n"
 
-t_bool	ft_is_even(int nbr);
+typedef int	t_bool;
 
-# ifndef EVEN
-#  define EVEN(nbr) (nbr % 2 == 0)
-# endif
-
-# ifndef EVEN_MSG
-#  define EVEN_MSG "I have an even number of arguments.\n"
-# endif
-
-# ifndef ODD_MSG
-#  define ODD_MSG "I have an odd number of arguments.\n"
-# endif
-
-# ifndef SUCCESS
-#  define SUCCESS 0
-# endif
+# define EVEN(nbr) (nbr % 2 == 0)
 
 #endif
