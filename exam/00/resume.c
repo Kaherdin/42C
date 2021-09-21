@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 01:48:05 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/19 02:31:19 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/21 03:05:35 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,23 @@ void	ft_putstr_array(char str[])
 	}
 }
 
+void	ft_putnbr(int nb)
+{
+	unsigned int nbr;
+
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		nbr = nb * -1;
+	}
+	else
+		nbr = nb;
+
+	if (nbr > 10)
+		ft_putnbr(nbr / 10);
+	ft_putchar(nbr % 10 + 48);
+}
+
 int	ft_strlen(char str[])
 {
 	int	len;
@@ -67,4 +84,6 @@ int	main(int argc, char **argv)
 	{
 		ft_putchar('a');
 	}
+	ft_putchar('\n');
+	ft_putnbr(-1205);
 }
