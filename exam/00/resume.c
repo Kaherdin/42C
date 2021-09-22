@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 01:48:05 by aborst            #+#    #+#             */
-/*   Updated: 2021/09/21 21:19:51 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/22 14:33:47 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,20 +74,21 @@ int	ft_is_number(char c)
 		return (0);
 }
 
-void	ft_putnbr(int nbr)
+void	ft_putnbr(int nb)
 {
-	char c;
+	unsigned int nbr;
 
-	if (nbr >= 10)
+	if (nb < 0)
 	{
-		ft_putnbr(nbr / 10);
-		ft_putnbr(nbr % 10);
+		ft_putchar('-');
+		nbr = nb * -1;
 	}
 	else
-	{
-		c = nbr + '0';
-		write(1, &c, 1);
-	}
+		nbr = nb;
+	if (nbr >= 10)	
+		ft_putnbr(nbr / 10);	
+	ft_putchar(nbr % 10 + '0');
+	
 }
 
 int		ft_is_prime(int nbr)
