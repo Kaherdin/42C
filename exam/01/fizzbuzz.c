@@ -12,29 +12,26 @@
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void	ft_putnbr(int nb)
+void ft_putnbr(int nb)
 {
-	int	nbr;
-
 	if (nb > 9)
 	{
 		ft_putnbr(nb / 10);
 	}
-	nbr = nb % 10 + 48;
-	ft_putchar(nbr);
+	ft_putchar(nb % 10 + 48);
 }
 
-int	main(void)
+int main(void)
 {
-	int	i;
+	int i;
 
 	i = 1;
-	while (i <= 100)
+	while (i <= 1000)
 	{
 		if (i % 15 == 0)
 			write(1, "fizzbuzz", 8);

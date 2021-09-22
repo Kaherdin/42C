@@ -12,16 +12,17 @@
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void	ft_first_word(char *str)
+void ft_first_word(char *str)
 {
-	int	i;
+	int i;
 
 	i = 0;
+	//To do : Is whitespace from atoi...
 	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n')
 		i++;
 	while (str[i] != ' ' && str[i] != '\t' && str[i] != '\n' && str[i] != '\0')
@@ -32,7 +33,7 @@ void	ft_first_word(char *str)
 }
 
 //int	main(int argc, char **argv)
-int	main(void)
+int main(void)
 {
 	ft_first_word("		tesst asdsadas");
 }

@@ -12,14 +12,14 @@
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-int	ft_check(char *str, char c, int size)
-{	
-	int	i;
+int ft_check(char *str, char c, int size)
+{
+	int i;
 
 	i = 0;
 	while (i < size)
@@ -31,10 +31,10 @@ int	ft_check(char *str, char c, int size)
 	return (1);
 }
 
-void	ft_inter(char *s1, char *s2)
+void ft_union(char *s1, char *s2)
 {
-	int	i;
-	int	j;
+	int i;
+	int j;
 
 	i = 0;
 	while (s1[i])
@@ -47,14 +47,14 @@ void	ft_inter(char *s1, char *s2)
 				if (s2[j] == s1[i])
 				{
 					ft_putchar(s1[i]);
-					break ;
+					break;
 				}
 				++j;
 			}
-		}			
+		}
 		++i;
 	}
-/* 	while (str2[s2_i])
+	/* 	while (str2[s2_i])
 	{
 		if (ft_check_double(str1, str2[s2_i], s1_i) == 1)
 		{
@@ -65,7 +65,7 @@ void	ft_inter(char *s1, char *s2)
 	} */
 }
 
-int	main(void)
+int main(void)
 {
-	ft_inter("padinton", "paqefwtdjetyiytjneytjoeyjnejeyj");
+	ft_union("padinton", "paqefwtdjetyiytjneytjoeyjnejeyj");
 }
