@@ -18,6 +18,20 @@ void	ft_putstr(char *str)
 	}
 }
 
+int	ft_check_if_exist(char c, char *str, int size)
+{
+	int	i;
+
+	i = 0;
+	while (i < size)
+	{
+		if (str[i] == c)
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
 int	ft_is_prime(int nbr)
 {
 	int	i;
@@ -58,7 +72,7 @@ int	ft_is_uppercase(char c)
 
 int	ft_is_whitespace(char c)
 {
-	if (c >= '\t' || c <= '\n' || c <= '\v' || c <= '\f' || c <= '\r' || c <= ' ')
+	if (c == '\t' || c == '\n' || c == '\v' || c == '\f' || c == '\r' || c == ' ')
 		return (1);
 	else
 		return (0);
@@ -70,6 +84,28 @@ int	ft_is_number(char c)
 		return (1);
 	else
 		return (0);
+}
+
+char	*ft_strdup(char *src)
+{
+	int		i;
+	int		len;
+	char	*str;
+	int *tab;
+
+	len = ft_strlen(src);
+	str = malloc(sizeof(*str) * (len + 1));
+	if (!(str))
+		return (NULL);
+	
+	i = 0;
+	while (i < len)
+	{
+		str[i] = src[i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }
 
  void ft_str_swap(char **a, char **b)
@@ -162,4 +198,8 @@ int	main(int argc, char **argv)
 	printf("String 2 = %s\n", src);
 	ft_strcpy(dest, src);
 	printf("String 1 is now = %s\n", dest);
+
+
+
+
 }
