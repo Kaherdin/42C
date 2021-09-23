@@ -6,7 +6,7 @@
 /*   By: aborst <aborst@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/11 18:01:29 by ecaceres          #+#    #+#             */
-/*   Updated: 2021/09/21 21:28:06 by aborst           ###   ########.fr       */
+/*   Updated: 2021/09/23 18:57:46 by aborst           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 		if (!(created))
 			return (NULL);
 		array[index] = *created;
-		array[index].size = ft_str_length(av[index]);
+		array[index].size = ft_strlen(av[index]);
 		array[index].str = av[index];
 		array[index].copy = ft_strdup(av[index]);
 		index++;
