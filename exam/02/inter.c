@@ -31,7 +31,7 @@ int ft_check(char *str, char c, int size)
 	return (1);
 }
 
-void ft_union(char *s1, char *s2)
+void ft_inter(char *s1, char *s2)
 {
 	int i;
 	int j;
@@ -67,5 +67,5 @@ void ft_union(char *s1, char *s2)
 
 int main(void)
 {
-	ft_union("padinton", "paqefwtdjetyiytjneytjoeyjnejeyj");
+	ft_inter("padinton", "paqefwtdjetyiytjneytjoeyjnejeyj");
 }
